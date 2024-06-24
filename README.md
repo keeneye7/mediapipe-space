@@ -1,24 +1,74 @@
-# my-vue-project
+# 은하수 실루엣 파티클 뷰어
 
-## Project setup
-```
-npm install
-```
+이 프로젝트는 사용자의 실루엣을 감지하여 은하수와 같은 파티클 효과로 표현하는 Vue.js 애플리케이션입니다. 웹캠을 통해 사용자의 모습을 캡처하고, 이를 3D 공간에서 파티클로 재현합니다.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 주요 기능
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 실시간 웹캠 영상 처리
+- MediaPipe를 이용한 실루엣 감지
+- Three.js를 사용한 3D 파티클 렌더링
+- 천장에서 내려다보는 듯한 고정 시점
+- 실루엣 변화에 따른 동적 파티클 업데이트
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 설치 방법
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. 저장소를 클론합니다:
+   ```
+   git clone [저장소 URL]
+   ```
+
+2. 프로젝트 디렉토리로 이동합니다:
+   ```
+   cd [프로젝트 폴더명]
+   ```
+
+3. 필요한 의존성을 설치합니다:
+   ```
+   npm install
+   ```
+
+## 사용 방법
+
+1. 개발 서버를 실행합니다:
+   ```
+   npm run serve
+   ```
+
+2. 웹 브라우저에서 `http://localhost:8080`(또는 터미널에 표시된 URL)으로 접속합니다.
+
+3. 웹캠 사용 권한을 허용합니다.
+
+4. 화면에 나타나는 당신의 실루엣이 파티클로 표현되는 것을 확인하세요!
+
+## 필요 사항
+
+- Node.js (v12 이상 권장)
+- 웹캠이 장착된 기기
+- 최신 버전의 Chrome, Firefox, 또는 Safari 웹 브라우저
+
+## 의존성
+
+- Vue.js 3
+- Three.js
+- MediaPipe Selfie Segmentation
+
+## 개발 환경 설정
+
+이 프로젝트는 Vue CLI를 사용하여 생성되었습니다. 개발을 위해 다음 명령어를 사용할 수 있습니다:
+
+- `npm run serve`: 개발 서버 실행
+- `npm run build`: 프로덕션용 빌드
+- `npm run lint`: 린트 실행
+
+## 주의사항
+
+- 이 애플리케이션은 충분한 조명이 있는 환경에서 가장 잘 작동합니다.
+- 성능은 사용자의 하드웨어 성능에 따라 다를 수 있습니다.
+
+## 라이선스
+
+이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 LICENSE 파일을 참조하세요.
+
+## 기여
+
+프로젝트에 기여하고 싶으시다면 Pull Request를 보내주세요. 대규모 변경사항의 경우, 먼저 이슈를 열어 논의해 주시기 바랍니다.
